@@ -4,7 +4,7 @@ class SpaceData extends LitElement {
   static get styles() {
     return css`
       :host {
-        background: lightblue;
+        background-color: rgba(0, 0, 0, 0.4);
         display: block;
         padding: 1rem;
       }
@@ -21,9 +21,9 @@ class SpaceData extends LitElement {
 
   render() {
     return html`
-      <div>Lat: <output>${this.lat}</output></div>
-      <div>Lon: <output>${this.lon}</output></div>
-      <div>Place: <span>${this.place}</span></div>
+      <div>LATITUDE: <output>${this.lat}</output></div>
+      <div>LONGITUDE: <output>${this.lon}</output></div>
+      <div>PLACE: <span>${this.place}</span></div>
     `;
   }
 }
